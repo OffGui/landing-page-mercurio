@@ -1,1 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Poppins&family=Staatliches&display=swap');
+
+.header-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: -webkit-linear-gradient(left, #00001e, #3f2850);
+background: -moz-linear-gradient(left, #00001e, #3f2850);
+background: -ms-linear-gradient(left, #00001e, #3f2850);
+background: -o-linear-gradient(left, #00001e, #3f2850);
+background: linear-gradient(to right, #00001e, #3f2850);
+}
+
+.header-container a {
+    padding-left: 20px;
+}
+
+.header-container img {
+    width: 35%;
+}
+
+.header-container nav {
+    display: flex;
+    width: 140%;
+}
+
+.header-container ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container li:hover {
+    color: antiquewhite;
+}
+
+/* FIRST-LOOK */
+.first-look {
+    height: 85vh;
+    background: url('../assets/img/MERCURIO-FIRST-LOOK.svg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .first-look h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+  }
+
+  .first-look:after {
+    content: url('../assets/img/seta_preta.png');
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+  }
+
+  @-webkit-keyframes downarrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4; }
+    100% { -webkit-transform: translateY(0.4em); opacity: 0.9; }
+  }
+
+  /* SOBRE */
+  .sobre {
+    font-family: 'Poppins', sans-serif;
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f4f1de;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+  }
+  
+  .sobre .item {
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sobre .item h3 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .sobre .item p {
+    margin: 30px 0;
+  }
+  
+  .sobre .item .btn-saiba-mais {
+    font-size: 1.7rem;
+    transition: 0.4s;
+  }
+  
+  .sobre .item .btn-saiba-mais:hover {
+    font-weight: 500;
+  }
+  
+  .sobre .image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sobre .img-right {
+    background: url('../assets/img/fonebtth.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  
+  .sobre .img-left {
+    background: url('../assets/img/moda.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  
+  /* QUALIDADES */
+  .qualidades {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .qualidades img {
+    width: 60px;
+  }
+
+  .qualidades h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .qualidades p {
+    font-family: 'Poppins', sans-serif;
+    max-width: 350px;
+  }
+
+  .delivery {
+    align-items: center;
+  }
+
+  .safe-buy {
+    align-items: center;
+  }
+
+  .cashback {
+    align-items: center;
+  }
+
+  /* RODAPÉ */
+  .rodape {
+    display: flex;
+  }
