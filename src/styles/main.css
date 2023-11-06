@@ -5,10 +5,10 @@
     width: 100%;
     align-items: center;
     background: -webkit-linear-gradient(left, #00001e, #3f2850);
-background: -moz-linear-gradient(left, #00001e, #3f2850);
-background: -ms-linear-gradient(left, #00001e, #3f2850);
-background: -o-linear-gradient(left, #00001e, #3f2850);
-background: linear-gradient(to right, #00001e, #3f2850);
+    background: -moz-linear-gradient(left, #00001e, #3f2850);
+    background: -ms-linear-gradient(left, #00001e, #3f2850);
+    background: -o-linear-gradient(left, #00001e, #3f2850);
+    background: linear-gradient(to right, #00001e, #3f2850);
 }
 
 .header-container a {
@@ -79,7 +79,7 @@ background: linear-gradient(to right, #00001e, #3f2850);
     grid-area: about;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #f4f1de;
+    background-color: #3D264E;
     max-width: var(--max-width-size);
     margin: 0 auto;
   }
@@ -107,7 +107,11 @@ background: linear-gradient(to right, #00001e, #3f2850);
   }
   
   .sobre .item .btn-saiba-mais:hover {
-    font-weight: 500;
+    color: antiquewhite;
+  }
+
+  .btn-saiba-mais {
+    border-bottom: #000;
   }
   
   .sobre .image {
@@ -165,4 +169,27 @@ background: linear-gradient(to right, #00001e, #3f2850);
   /* RODAPÉ */
   .rodape {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: -webkit-linear-gradient(left, #00001e, #3f2850);
+    background: -moz-linear-gradient(left, #00001e, #3f2850);
+    background: -ms-linear-gradient(left, #00001e, #3f2850);
+    background: -o-linear-gradient(left, #00001e, #3f2850);
+    background: linear-gradient(to right, #00001e, #3f2850);
+  }
+
+  .logo-footer {
+    width: 100px;
+  }
+
+  .icon-footer {
+    padding: 5px;
+    width: 50px;
+    filter: invert(100%);
+  }
+
+  .rodape ul {
+    display: flex;
+    align-items: center;
   }
